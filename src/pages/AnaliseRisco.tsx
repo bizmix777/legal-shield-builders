@@ -317,43 +317,41 @@ const AnaliseRisco = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="py-20 lg:py-28 gradient-primary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      {/* Final Call to Action Section */}
+      <section className="py-20 lg:py-28 bg-[hsl(200,50%,12%)] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 right-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-20 w-80 h-80 bg-white rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary-foreground mb-6">
-              Proteja seu Negócio Hoje
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-8 leading-tight">
+              O Maior Investimento da Sua Vida Merece Segurança Total
             </h2>
-            <p className="text-xl text-primary-foreground/90 mb-10">
-              Não deixe riscos ocultos comprometerem sua transação imobiliária. 
-              Nossa equipe está pronta para ajudar.
-            </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={handleWhatsAppClick}
-                className="inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <Phone className="w-5 h-5" />
-                Solicitar Análise Agora
-              </button>
-              
-              <a
-                href="/"
-                className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white/50 text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-300"
-              >
-                Voltar ao Site
-              </a>
+            <div className="text-lg md:text-xl text-white/85 mb-10 space-y-4 max-w-3xl mx-auto leading-relaxed">
+              <p>
+                Comprar um imóvel é um grande passo. Você faria uma cirurgia sem exames? Não. 
+                Então por que comprar um imóvel sem um raio-X completo?
+              </p>
+              <p>
+                Por um valor acessível, nossa <strong className="text-white">Análise de Risco em 24h</strong> investiga 
+                a saúde da propriedade e dos vendedores em todas as esferas.
+              </p>
+              <p className="font-semibold text-white">
+                Não compre no escuro. Compre com o nosso Sinal Verde.
+              </p>
             </div>
             
-            <p className="mt-8 text-primary-foreground/80 text-sm">
-              A partir de R$ 500 • Resultado em 24h • Garantia de qualidade
-            </p>
+            <button
+              onClick={handleWhatsAppClick}
+              className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              <Shield className="w-6 h-6" />
+              Quero Minha Análise Agora
+              <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </section>
