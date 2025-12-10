@@ -85,7 +85,7 @@ export function Footer() {
 
         <div className="border-t border-background/10 pt-8 text-center">
           <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} Legal Shield. Todos os direitos reservados.
+            © {new Date().getFullYear()} Biz Mix. Todos os direitos reservados.
           </p>
         </div>
       </div>
