@@ -1,9 +1,9 @@
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "5511999999999"; // Update with actual number
+  const whatsappNumber = "5562992475080"; // Update with actual number
   const message = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços jurídicos.");
-  
+
   return (
     <a
       href={`https://wa.me/${whatsappNumber}?text=${message}`}
@@ -13,9 +13,7 @@ export function WhatsAppButton() {
       aria-label="Contato via WhatsApp"
     >
       <MessageCircle className="w-6 h-6" />
-      <span className="font-medium hidden sm:inline group-hover:inline">
-        Fale Conosco
-      </span>
+      <span className="font-medium hidden sm:inline group-hover:inline">Fale Conosco</span>
     </a>
   );
 }
