@@ -1,11 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"; // <--- Mudou aqui
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import AnaliseRisco from "@/pages/AnaliseRisco";
-import ScrollToTop from "@/components/ScrollToTop"; // Vamos criar esse helper já já
+import Regularizacao from "@/pages/Regularizacao"; // Novo
+import Contratos from "@/pages/Contratos";         // Novo
+import Leiloes from "@/pages/Leiloes";             // Novo
+import ScrollToTop from "@/components/ScrollToTop";
 
 function HomePage() {
   return (
@@ -21,11 +24,14 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter> {/* <--- Mudou aqui */}
-      <ScrollToTop /> {/* Isso garante que ao mudar de página, o scroll vá para o topo */}
+    <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/analise-risco" element={<AnaliseRisco />} />
+        <Route path="/regularizacao" element={<Regularizacao />} />
+        <Route path="/contratos" element={<Contratos />} />
+        <Route path="/leiloes" element={<Leiloes />} />
       </Routes>
     </BrowserRouter>
   );
