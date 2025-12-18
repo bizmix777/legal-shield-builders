@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  // MUDANÇA AQUI: Caminho absoluto explícito
-  base: '/direito-legal/', 
+  // VOLTA PARA O PONTO (Isso permite rodar em qualquer pasta)
+  base: './', 
 
   server: {
     host: "::",
