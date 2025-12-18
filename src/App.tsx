@@ -17,8 +17,10 @@ function HomePage() {
 }
 
 function App() {
+  // AQUI ESTÁ A MÁGICA: basename="/direito-legal"
+  // Isso diz pro React: "Ignore a parte /direito-legal da URL"
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.MODE === 'production' ? '/direito-legal' : '/'}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/analise-risco" element={<AnaliseRisco />} />
