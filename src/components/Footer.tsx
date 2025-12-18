@@ -1,91 +1,120 @@
-import { Shield, Mail, Phone, MapPin } from "lucide-react";
+import { MapPin, Phone, Mail, ArrowRight, Scale, Building2, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-gray-950 text-white pt-16 pb-8 border-t border-gray-800">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          
+          {/* Coluna 1: Identidade e Credenciais */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Shield className="w-8 h-8 text-secondary" />
-              <span className="font-display text-xl font-bold">Biz Mix</span>
-            </div>
-            <p className="text-background/70 text-sm leading-relaxed">
-              Segurança jurídica especializada para o mercado imobiliário e da construção civil. Protegemos seu negócio
-              com expertise e agilidade.
+            <h3 className="text-2xl font-display font-bold mb-6 text-white">
+              Henrique <span className="text-primary">Advocacia & Negócios</span>
+            </h3>
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Unindo a segurança jurídica à visão de negócios. Tecnologia e experiência de 30 anos a favor do seu patrimônio.
             </p>
+            
+            {/* Bloco de Credenciais */}
+            <div className="flex flex-col gap-2 bg-gray-900 p-4 rounded-lg border border-gray-800">
+              <div className="flex items-center gap-3 text-sm font-medium text-gray-300">
+                <Scale className="w-4 h-4 text-primary" />
+                <span>OAB/GO: <strong className="text-white">41.660</strong></span>
+              </div>
+              <div className="flex items-center gap-3 text-sm font-medium text-gray-300">
+                <Building2 className="w-4 h-4 text-secondary" />
+                <span>CRECI/GO: <strong className="text-white">23.479</strong></span>
+              </div>
+            </div>
           </div>
 
+          {/* Coluna 2: Links Rápidos */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Contato</h4>
-            <ul className="space-y-3">
+            <h4 className="text-lg font-bold mb-6 text-white">Acesso Rápido</h4>
+            <ul className="space-y-4">
               <li>
-                <a
-                  href="mailto:contato@bizmix.com.br"
-                  className="flex items-center gap-3 text-background/70 hover:text-secondary transition-colors"
-                >
-                  <Mail className="w-4 h-4" />
-                  contato@bizmix.com.br
+                <Link to="/" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2 group">
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link to="/analise-risco" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2 group">
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  Análise de Risco (Due Diligence)
+                </Link>
+              </li>
+              <li>
+                {/* Link ancora para a Home */}
+                <a href="/#services" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2 group">
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  Nossas Soluções
                 </a>
               </li>
               <li>
-                <a
-                  href="tel:+5562992475080"
-                  className="flex items-center gap-3 text-background/70 hover:text-secondary transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  (62) 99247-5080
+                <a href="/#sobre" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2 group">
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  Sobre os Especialistas
                 </a>
               </li>
-              <li>
-                <span className="flex items-center gap-3 text-background/70">
-                  <MapPin className="w-4 h-4" />
-                  Anápolis, GO
+            </ul>
+          </div>
+
+          {/* Coluna 3: Contato e Localização */}
+          <div>
+            <h4 className="text-lg font-bold mb-6 text-white">Fale Conosco</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 text-gray-400">
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
+                <span>
+                  Anápolis - Goiás<br />
+                  <span className="text-sm text-gray-500">Atendimento em todo o Brasil (Digital)</span>
                 </span>
               </li>
+              <li>
+                <a 
+                  href="https://wa.me/5511999999999" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors"
+                >
+                  <Phone className="w-5 h-5 shrink-0" />
+                  <span>WhatsApp: (11) 99999-9999</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:contato@henrique.adv.br" 
+                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+                >
+                  <Mail className="w-5 h-5 shrink-0" />
+                  <span>contato@henrique.adv.br</span>
+                </a>
+              </li>
             </ul>
-          </div>
 
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Serviços</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#services" className="text-background/70 hover:text-secondary transition-colors">
-                  Análise de Risco
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-background/70 hover:text-secondary transition-colors">
-                  Análise de Terrenos
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-background/70 hover:text-secondary transition-colors">
-                  Blindagem Contratual
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-background/70 hover:text-secondary transition-colors">
-                  Regularização Fundiária
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-background/70 hover:text-secondary transition-colors">
-                  Gestão de Distratos
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-background/70 hover:text-secondary transition-colors">
-                  Consultoria Preventiva
-                </a>
-              </li>
-            </ul>
+            {/* Redes Sociais (Placeholders) */}
+            <div className="flex gap-4 mt-8">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition-all">
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-background/10 pt-8 text-center">
-          <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} Biz Mix. Todos os direitos reservados.
+        {/* Barra de Direitos Autorais */}
+        <div className="border-t border-gray-800 pt-8 mt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-sm">
+            &copy; {currentYear} Henrique Advocacia & Negócios. Todos os direitos reservados.
+          </p>
+          <p className="text-gray-600 text-xs">
+            Desenvolvido com Tecnologia & Sabedoria.
           </p>
         </div>
       </div>
