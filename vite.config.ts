@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  // VOLTA PARA O PONTO (Isso permite rodar em qualquer pasta)
-  base: './', 
+   // MUDANÇA: Sem ponto. Caminho exato do seu site.
+  base: '/direito-legal/', 
 
   server: {
     host: "::",
