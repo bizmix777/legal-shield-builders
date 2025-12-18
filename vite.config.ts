@@ -4,8 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // MUDANÇA AQUI: Caminho absoluto explícito
-  base: '/direito-legal/',
+  // VOLTAR PARA RELATIVO
+  base: './', 
 
   server: {
     host: "::",
