@@ -32,6 +32,8 @@ export default function Contratos() {
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             Não use modelos de internet. Criamos contratos personalizados que preveem cenários de crise, inadimplência e distrato, protegendo você de verdade.
           </p>
+          
+          {/* BOTÃO CORRIGIDO: Agora abre o Modal */}
           <button 
             onClick={() => setIsModalOpen(true)}
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 cursor-pointer"
