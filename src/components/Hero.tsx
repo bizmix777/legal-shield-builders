@@ -7,7 +7,6 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen gradient-hero flex items-center overflow-hidden">
-      {/* Elementos de Fundo (Ambientação Tech) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-secondary/10 rounded-full blur-3xl opacity-50" />
@@ -16,25 +15,21 @@ export function Hero() {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           
-          {/* Badge de Autoridade */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-primary/20 text-primary mb-8 animate-fade-in shadow-sm backdrop-blur-sm">
             <Scale className="w-4 h-4" />
             <span className="text-sm font-bold tracking-wide">ADVOCACIA & INTELIGÊNCIA IMOBILIÁRIA</span>
           </div>
           
-          {/* Headline Poderosa */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight animate-fade-in font-display" style={{ animationDelay: "0.1s" }}>
             Protegendo seu Patrimônio com <br className="hidden md:block" />
             <span className="text-gradient">Visão de Negócios e Tecnologia</span>
           </h1>
           
-          {/* Sub-headline (Sua História) */}
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in leading-relaxed" style={{ animationDelay: "0.2s" }}>
             Unimos a segurança jurídica à agilidade comercial. 
             Soluções para compra, venda e regularização de imóveis com a experiência de quem empreende desde 1990.
           </p>
           
-          {/* Botões de Ação */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <button
               onClick={scrollToServices}
@@ -45,7 +40,7 @@ export function Hero() {
             </button>
             
             <a
-              href="https://wa.me/5511999999999?text=Olá Henrique! Gostaria de uma análise do meu caso."
+              href="https://wa.me/5562992475080?text=Olá Henrique! Gostaria de uma análise do meu caso."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white border-2 border-primary/10 text-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:border-primary/50 hover:bg-gray-50 transition-all duration-300 flex items-center justify-center gap-2"
@@ -54,10 +49,8 @@ export function Hero() {
             </a>
           </div>
           
-          {/* Cards de Destaque (Seus Diferenciais) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in text-left" style={{ animationDelay: "0.4s" }}>
             
-            {/* Card 1: Tech + Direito */}
             <div className="bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
               <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
                 <Brain className="w-6 h-6 text-primary" />
@@ -68,7 +61,6 @@ export function Hero() {
               </p>
             </div>
             
-            {/* Card 2: Imobiliário */}
             <div className="bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
               <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-100 transition-colors">
                 <Shield className="w-6 h-6 text-secondary" />
@@ -79,7 +71,6 @@ export function Hero() {
               </p>
             </div>
             
-            {/* Card 3: Negócios */}
             <div className="bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
               <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors">
                 <Scale className="w-6 h-6 text-purple-600" />
