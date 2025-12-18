@@ -17,6 +17,9 @@ function HomePage() {
 }
 
 function App() {
+  // Linha adicionada para forçar atualização do Cloudflare
+  console.log("Versão nova: Forçando atualização do Cloudflare!");
+
   return (
     <HashRouter>
       <Routes>
