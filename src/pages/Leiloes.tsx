@@ -1,9 +1,10 @@
-import { ArrowLeft, Gavel, TrendingUp, AlertOctagon, SearchCheck, Key } from "lucide-react";
+import { ArrowLeft, Gavel, TrendingUp, AlertOctagon, SearchCheck, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Leiloes() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Barra de Navegação */}
       <nav className="bg-white border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
@@ -14,6 +15,7 @@ export default function Leiloes() {
         </div>
       </nav>
 
+      {/* Hero Section */}
       <section className="relative py-20 bg-emerald-900 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay" />
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -35,6 +37,7 @@ export default function Leiloes() {
         </div>
       </section>
 
+      {/* Conteúdo */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -44,9 +47,18 @@ export default function Leiloes() {
                 O que analisamos antes do lance:
               </h3>
               <ul className="space-y-4">
-                <li className="flex items-center gap-3 text-foreground"><CheckCircle2 className="w-5 h-5 text-emerald-600" /> Nulidades no processo (para evitar anulação futura)</li>
-                <li className="flex items-center gap-3 text-foreground"><CheckCircle2 className="w-5 h-5 text-emerald-600" /> Dívidas que acompanham o imóvel (IPTU, Condomínio)</li>
-                <li className="flex items-center gap-3 text-foreground"><CheckCircle2 className="w-5 h-5 text-emerald-600" /> Estado de ocupação e dificuldade de despejo</li>
+                <li className="flex items-center gap-3 text-foreground">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600" /> 
+                  Nulidades no processo (para evitar anulação futura)
+                </li>
+                <li className="flex items-center gap-3 text-foreground">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600" /> 
+                  Dívidas que acompanham o imóvel (IPTU, Condomínio)
+                </li>
+                <li className="flex items-center gap-3 text-foreground">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600" /> 
+                  Estado de ocupação e dificuldade de despejo
+                </li>
               </ul>
             </div>
             <div className="order-1 md:order-2">
