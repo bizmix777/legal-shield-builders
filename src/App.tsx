@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
+import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import AnaliseRisco from "@/pages/AnaliseRisco";
@@ -10,6 +11,7 @@ function HomePage() {
     <div className="min-h-screen">
       <Hero />
       <Services />
+      <About />
       <Footer />
       <WhatsAppButton />
     </div>
@@ -17,8 +19,8 @@ function HomePage() {
 }
 
 function App() {
-  // Linha adicionada para forçar atualização do Cloudflare
-  console.log("Versão nova: Forçando atualização do Cloudflare!");
+  // Log para garantir atualização do cache no Cloudflare
+  console.log("Versão nova: Equipe adicionada!");
 
   return (
     <HashRouter>
