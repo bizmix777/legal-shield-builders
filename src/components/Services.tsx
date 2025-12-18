@@ -6,25 +6,25 @@ const services = [
     icon: <Search className="w-8 h-8 text-primary" />,
     title: "Análise de Risco (Due Diligence)",
     description: "Investigação completa de dívidas, processos e pendências do imóvel e dos vendedores. Segurança zero surpresas.",
-    link: "/analise-risco" // <--- O PULO DO GATO ESTÁ AQUI
+    link: "/analise-risco"
   },
   {
     icon: <Home className="w-8 h-8 text-secondary" />,
     title: "Regularização de Imóveis",
     description: "Usucapião, inventários, desmembramentos e retificações de área. Transformamos posse em propriedade registrada.",
-    link: null
+    link: "/regularizacao" // Link Ativado
   },
   {
     icon: <FileText className="w-8 h-8 text-primary" />,
     title: "Contratos Blindados",
     description: "Elaboração e revisão de contratos de compra e venda, locação e permuta com cláusulas de proteção avançada.",
-    link: null
+    link: "/contratos" // Link Ativado
   },
   {
     icon: <CheckCircle2 className="w-8 h-8 text-secondary" />,
     title: "Assessoria em Leilões",
     description: "Análise jurídica prévia de editais e imóveis de leilão para garantir a arrematação segura e lucrativa.",
-    link: null
+    link: "/leiloes" // Link Ativado
   }
 ];
 
@@ -54,13 +54,12 @@ export function Services() {
                 {service.description}
               </p>
               
-              {/* Se tiver link, mostra o botão */}
               {service.link && (
                 <Link 
                   to={service.link}
                   className="inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all mt-auto"
                 >
-                  Ver Detalhes da Análise
+                  Saiba Mais
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               )}
