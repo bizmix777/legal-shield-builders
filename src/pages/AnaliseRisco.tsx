@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function AnaliseRisco() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Barra de Navegação Simples */}
       <nav className="bg-white border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
@@ -17,7 +16,6 @@ export default function AnaliseRisco() {
         </div>
       </nav>
 
-      {/* Hero Section da Página */}
       <section className="relative py-20 bg-primary overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay" />
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -34,7 +32,7 @@ export default function AnaliseRisco() {
             Descubra dívidas ocultas, processos e riscos de fraude antes de pagar.
           </p>
           <a 
-            href="https://wa.me/5511999999999?text=Olá Henrique, quero solicitar uma Análise de Risco para um imóvel."
+            href="https://wa.me/5562992475080?text=Olá Henrique, quero solicitar uma Análise de Risco para um imóvel."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
@@ -45,7 +43,6 @@ export default function AnaliseRisco() {
         </div>
       </section>
 
-      {/* O Problema (Por que contratar?) */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -105,7 +102,6 @@ export default function AnaliseRisco() {
         </div>
       </section>
 
-      {/* Diferenciais */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-foreground mb-12 font-display">Por que nossa análise é superior?</h2>
@@ -135,7 +131,6 @@ export default function AnaliseRisco() {
         </div>
       </section>
 
-      {/* CTA Final */}
       <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-display">
@@ -146,7 +141,7 @@ export default function AnaliseRisco() {
             O custo de um problema jurídico pode ser 100% do seu patrimônio.
           </p>
           <a 
-            href="https://wa.me/5511999999999?text=Olá, gostaria de um orçamento para análise de risco imobiliário."
+            href="https://wa.me/5562992475080?text=Olá, gostaria de um orçamento para análise de risco imobiliário."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-600 text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-green-700 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
